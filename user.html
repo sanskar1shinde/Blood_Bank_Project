@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            User Login
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+           
+       <body>
+        <div class="loginbox">
+            <img src="images/avatar.png" class="avatar">
+             
+            
+            <h1> Login Here</h1>
+            <div id="error" style="color: red;"></div><br/>
+            <div id="loginsuccess" style="color: rgb(16, 48, 230);"></div>
+            <form name="myform">
+
+                Enter ID
+                <input type="text" name="username" class="inputText" placeholder="Enter Id" id="username">
+              
+                <p>
+                  Password
+                  </p>
+                  <input type="password" name="password" class="inputText"  placeholder="Enter Password" id="password">
+                
+                  <input type="button" name="login" id="logbutton" value="login" onclick="myFunction()"> 
+                  
+                  <input type="reset" name="" value="Reset">
+                   
+                  <br>
+                <a href="#"> Forgot password!</a><br>
+                <a href="reg.html"><h4> Don't Have an account? </h4></a> 
+ 
+            </form> 
+            </div>
+            <script>
+
+                
+                function myFunction() {
+                    var username = document.forms["myform"]["username"].value;
+                    var password = document.forms["myform"]["password"].value;
+
+                    if(username=="tanmay123" && password=="2003")
+                    {
+                    window.location.href="record2.html";
+                    }
+                    else{
+
+                        if(username=="shivam123" && password=="2002")
+                        {
+                            
+                            document.getElementById('loginsuccess').innerHTML = 'Login successfully';
+                           
+                            setTimeout(sucess, 2000);                    
+                        }
+                        else
+                        {                           
+                            alert('Please enter valid user name & password')
+                          
+                        }
+                    }                   
+                                 
+                }
+
+                function sucess() {
+                    window.location.href="record.html";
+                }
+            </script>     
+        </body>   
+    </head>
+    
+ 
+</html>

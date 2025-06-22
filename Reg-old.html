@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Registration
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <style>
+            
+            body{
+                  background: url(images/back7.jpg);;
+                  background-size: cover;
+                  background-position: center;
+            }
+            
+            </style> 
+       <body>
+        <div class="loginbox">
+             
+              
+            <h1> Register Here</h1>
+            <form name="myform" method="post">
+               
+                <p> Donor's First Name </p> <input type="text" name="" placeholder="Enter Fisrt name" id="username">
+                <p> Donor's Last Name </p> <input type="text" name="" placeholder="Enter Last Name" id="dlname">
+                <p> Gender </p> 
+                <label><input type="radio" name="m"> Male</label>
+                   <label>             <input type="radio" name="f"> Female</label>
+                <p> DOB </p> <input type="date" name="">
+                <p> Select Blood Group:
+               <select name=blood>
+                   <option>A+</option>
+                   <option>A-</option>
+                   <option>B+</option>
+                   <option>B-</option>
+                   <option>O+</option>
+                   <option>O-</option>
+                   <option>AB+</option>
+                   <option>AB-</option>
+               </select></p>
+               <p> ID Proof(Aadhar No.)</p><input type="text" name="" placeholder="Enter your aadhar">
+               <P>Mobile Number </P><input type="text" name="" placeholder="+91">
+               <P>E-mail Id </P><input type="text" name="" placeholder="demo@gamil.com">
+               <P>Address </P><input type="text" name="" placeholder="Enter Address">
+               <P>City</P><input type="text" name="" placeholder="City">
+               <P>State </P><input type="text" name="" placeholder="State"><br><br>
+               <label> <input type="checkbox" name="">I agree all details are true to my knowledge!</label><br><br>
+               
+               <a href="#"> Forgot password !</a><br><br>
+              
+              <input type="button" name="Register" id="Register" value="Register" onclick="register()"> 
+                
+                <input type="reset" name="" value="Reset">                   
+ 
+            </form> 
+            </div>
+            <script>
+                function register() {
+                    var username = document.getElementById("username").value;
+                    var dlName = document.getElementById("dlname").value;
+                    window.location.href="thanks.html";  
+                    
+                  
+                }
+                            
+                           
+                                 
+                 
+            </script>
+        </body>   
+    </head>

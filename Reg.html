@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Registration
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        
+       <body>
+        <div class="loginbox">
+             
+              
+            <h1> Register Here</h1>
+            <form name="myform" method="post" action="thanks.html" onsubmit="return validateform()" >  
+                <p>Donor's First Name:</p> <input type="text" name="name" placeholder="Enter First Name"><br/>  
+                <p> Donor's Last Name </p> <input type="text" name="lname" placeholder="Enter Last Name">
+                <p> Gender </p> 
+                <label><input type="radio" name="m"> Male</label>
+                   <label>             <input type="radio" name="f"> Female</label>
+                <p> DOB </p> <input type="date" name="">
+                <p> Select Blood Group:
+               <select name=blood>
+                   <option>A+</option>
+                   <option>A-</option>
+                   <option>B+</option>
+                   <option>B-</option>
+                   <option>O+</option>
+                   <option>O-</option>
+                   <option>AB+</option>
+                   <option>AB-</option>
+               </select></p>
+               <p> ID Proof(Aadhar No.)</p><input type="text" name="aadhar" placeholder="Enter your aadhar">
+               <P>Mobile Number </P><input type="text" name="" placeholder="+91">
+               <P>E-mail Id </P><input type="text" name="" placeholder="demo@gamil.com">
+               <P>Address </P><input type="text" name="" placeholder="Enter Address">
+               <P>City</P><input type="text" name="" placeholder="City">
+               <P>State </P><input type="text" name="" placeholder="State"><br><br>
+               <label> <input type="checkbox" name="">I agree all details are true to my knowledge!</label><br><br>
+               
+               
+                <input type="submit" value="register"> 
+                <input type="reset" name="" value="Reset">   
+            </div>
+            <script>
+                function validateform(){  
+                    var name=document.myform.name.value;  
+                    var aadhar=document.myform.aadhar.value;   
+                    
+                    if (name==null || name==""){  
+                    alert("Donor's Name can't be blank");  
+                    return false;  
+                    } else if(aadhar==null || aadhar==""){  
+                    alert("aadhar no. can't be blank");  
+                    return false;  
+                    }  else{
+                       
+                        alert('Register successfully');
+                    }
+                    }  
+
+
+                    
+                            
+                           
+                                 
+                 
+            </script>
+        </body>   
+    </head>
